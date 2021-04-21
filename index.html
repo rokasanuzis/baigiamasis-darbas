@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Baigiamasis darabs</title>
   </head>
@@ -16,8 +16,8 @@
             <nav>
                 <ul>
                     <li><a href="#">Features</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#">Reviews</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -25,7 +25,7 @@
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="features">
             <img class="hero-image" src="images/hero-min.jpg" alt="city">
             <div class="hero-content container">
                 <div class="hero-text">
@@ -59,7 +59,7 @@
             <img src="images/Group 87.svg">
             </div>
         </section>
-        <section class="custom-section">
+        <section class="custom-section" id="about">
             <div class="container">
                     <img src="images/logo.svg">
                     <div class="custom-column">
@@ -91,7 +91,7 @@
                     </div>
             </div>
         </section>
-    <section class="pricing-section">
+    <section class="pricing-section" id="pricing">
         <div class="container">
             <h2 class="line">pricing options</h2>
             <p class="pricing-p-style">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -159,8 +159,44 @@
             </div>
         </div>
     </section>
+    <section class="grid">
+        <div class="container">
+            <div class="grid-column">
+            <h2>WHY THIS IS AWESOME</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="grid-row">
+                <div class="grid-one">
+                    <div class="grid-into"><img src="images/Path 79.svg"></div>
+                    <h3>Thoughtful Design</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing  elit. Aenean euismod
+                        ibendum laoreet.
+                    </p>
+                </div>
+                <div class="grid-one">
+                    <div class="grid-into"><img src="images/Path 76.svg"></div>
+                    <h3>Well Crafted</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit Aenean
+                        euismod bibendum.
+                    </p>
+                </div>
+                <div class="grid-one">
+                    <div class="grid-into"><img src="images/Path 78.svg"></div>
+                    <h3>Easy to Customize</h3>
+                    <p>
+                        Proin gravida  dolor sit amet lacus
+                        accumsan et viverra.
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
     <footer>
-
+        
     </footer>
   </body>
 </html>
