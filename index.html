@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Baigiamasis darabs</title>
   </head>
   <body>
     <header>
         <div class="container">
-            <img src="images/logo.svg" alt="Cheshire County">
-            <nav>
+            <img class="logo" src="images/logo.svg" alt="Cheshire County">
+            <nav id="navigation">
                 <ul>
                     <li><a href="#">Features</a></li>
                     <li><a href="#about">About</a></li>
@@ -22,6 +23,7 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <img class="menu-icon" id="mobile-menu-trigger" src="images/menu.svg" alt="menu">
         </div>
     </header>
     <main>
@@ -38,8 +40,37 @@
                     </p>
                     <div class="button">DOWNLOAD</div>
                 </div>
-                <div class="hero-input">
-                    <h3>try your <span>free</span> tiral today</h3>
+                <div class="hero-form">
+                    <h3>
+                        try your <span>free</span> tiral today
+                    </h3>
+                    <div class="form">
+                        <h4>Your details</h4>
+                        <input type="text" name="name" id="firstname" placeholder="First name">
+                        <input type="text" name="surname" id="lastname" placeholder="Last name">
+                        <input type="tel" name="phone" id="telnumb" placeholder="Phone number">
+
+                        <form>
+                            <h4>Type of subscription</h4>
+                            <div class="input-row">
+                            <div class="custom-radio">
+                                <input type="radio" name="subscription" id="sub-month">
+                                <label for="sub-month">
+                                    <div class="radio"></div>
+                                    <span>MONTHLY</span>
+                                </label>
+                            </div>
+    
+                            <div class="custom-radio">
+                                <input type="radio" name="subscription" id="sub-year">
+                                <label for="sub-year">
+                                    <div class="radio"></div>
+                                    <span>YEARLY</span>
+                                </label>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
                     <div class="button">get started</div>
                 </div>
             </div>
@@ -58,6 +89,76 @@
             <img src="images/pinterest.svg" alt="pinterest">
             <img src="images/Group 87.svg">
             </div>
+        </section>
+        <section class="tabb">
+            <img class="tabb-image" src="images/tab-section-img-min.jpg">
+                <div class="tab-section-content container">
+                    <ul class="tabs">
+                        <li data-tab-target="#register" class="active tab"><span>register</span></li>
+                        <li data-tab-target="#apply" class="tab"><span>apply</span></li>
+                        <li data-tab-target="#receive" class="tab"><span>receive</span></li>
+                      </ul>
+                    <div class="tab-content">
+                        <div id="register" data-tab-content class="active">
+                            <h2>  
+                                Tabs with soft transitioning
+                                effect. Explained propriety
+                                of out perpetual his you.
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                                penatibus et magnis dis parturient montes.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                bibendum laoreet.
+                            </p>
+                        </div>
+                        <div id="apply" data-tab-content>
+                            <h2>  
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt
+                                 iure debitis! Magnam, pariatur iusto, placeat voluptatum adipisci totam 
+                                 quo eligendi neque magni maxime explicabo debitis ut molestiae quas est!
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                                penatibus et magnis dis parturient montes.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                bibendum laoreet.
+                            </p>
+                        </div>
+                        <div id="receive" data-tab-content>
+                            <h2>  
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem commodi 
+                                nulla, doloremque numquam inventore sapiente enim expedita esse eligendi 
+                                rem cumque. Quidem, aspernatur reiciendis repudiandae ratione error iusto non modi?
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                                penatibus et magnis dis parturient montes.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                bibendum laoreet.
+                            </p>
+                        </div>
+                      </div>
+                      <div class="tab-aside-column">
+                      <div class="tab-aside-img">
+                          <div class="overlay-img1"></div>
+                          <div class="overlay-img2"></div>
+                      </div>
+                        <div class="overlay-img3"></div>
+                        </div>
+                </div>
         </section>
         <section class="custom-section" id="about">
             <div class="container">
@@ -89,6 +190,42 @@
                         </div>
                     </div>
                     </div>
+            </div>
+        </section>
+        <section class="grid">
+            <div class="container">
+                <div class="grid-column">
+                <h2>WHY THIS IS AWESOME</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="grid-row">
+                    <div class="grid-one">
+                        <div class="grid-into"><img src="images/Path 79.svg"></div>
+                        <h3>Thoughtful Design</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing  elit. Aenean euismod
+                            ibendum laoreet.
+                        </p>
+                    </div>
+                    <div class="grid-one">
+                        <div class="grid-into"><img src="images/Path 76.svg"></div>
+                        <h3>Well Crafted</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit Aenean
+                            euismod bibendum.
+                        </p>
+                    </div>
+                    <div class="grid-one">
+                        <div class="grid-into"><img src="images/Path 78.svg"></div>
+                        <h3>Easy to Customize</h3>
+                        <p>
+                            Proin gravida  dolor sit amet lacus
+                            accumsan et viverra.
+                        </p>
+                    </div>
+                </div>
+                </div>
             </div>
         </section>
     <section class="pricing-section" id="pricing">
@@ -159,44 +296,129 @@
             </div>
         </div>
     </section>
-    <section class="grid">
+    <section class="swiper-section">
         <div class="container">
-            <div class="grid-column">
-            <h2>WHY THIS IS AWESOME</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div class="grid-row">
-                <div class="grid-one">
-                    <div class="grid-into"><img src="images/Path 79.svg"></div>
-                    <h3>Thoughtful Design</h3>
+            <h2>What our customers are saying</h2>
+
+            <div class="swiper-container rewievs-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                      <p class="coment-text-style">
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit.
+                        Doloribus accusamus
+                        expedita repellat similique 
+                        odio aspernatur ex.
+                      </p>
+                    <img src="https://randomuser.me/api/portraits/men/8.jpg">
+                  </div>
+                  <div class="swiper-slide">
+                      <p>
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit.
+                        Doloribus accusamus
+                        expedita.
+                      </p>
+                    <img src="https://randomuser.me/api/portraits/women/40.jpg">
+                  </div>
+                  <div class="swiper-slide">
+                      <p>
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit.
+                        Doloribus accusamus
+                        expedita repellat similique 
+                        odio aspernatur ex.
+                      </p>
+                    <img src="https://randomuser.me/api/portraits/men/44.jpg">
+                  </div>
+                  <div class="swiper-slide">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipiscing  elit. Aenean euismod
-                        ibendum laoreet.
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit.
+                        Doloribus accusamus
+                        expedita repellat similique 
+                        odio aspernatur ex.
                     </p>
+                    <img src="https://randomuser.me/api/portraits/men/28.jpg">
+                  </div>
+                  <div class="swiper-slide">
+                      <p>
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit.
+                        Doloribus accusamus
+                        expedita.
+                      </p>
+                    <img src="https://randomuser.me/api/portraits/women/27.jpg">
+                  </div>
+                  <div class="swiper-slide">
+                      <p>
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit.
+                        Doloribus accusamus
+                        expedita repellat similique 
+                        odio aspernatur ex.
+                      </p>
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg">
+                  </div>
                 </div>
-                <div class="grid-one">
-                    <div class="grid-into"><img src="images/Path 76.svg"></div>
-                    <h3>Well Crafted</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit Aenean
-                        euismod bibendum.
-                    </p>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+              </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Contact us</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <div class="form form-border">
+                    <input type="text" name="name" id="firstname" placeholder="First name">
+                    <input type="text" name="surname" id="lastname" placeholder="Last name">
+                    <input type="tel" name="phone" id="telnumb" placeholder="Phone number">
+
+                    <form>
+                        <div class="input-row">
+                        <div class="custom-radio">
+                            <input type="radio" name="subscription" id="personal">
+                            <label for="personal">
+                                <div class="radio"></div>
+                                <span>PERSONAL</span>
+                            </label>
+                        </div>
+
+                        <div class="custom-radio">
+                            <input type="radio" name="subscription" id="company">
+                            <label for="company">
+                                <div class="radio"></div>
+                                <span>COMPANY</span>
+                            </label>
+                        </div>
+                        </div>
+                        <div class="button">send</div>
+                    </form>
                 </div>
-                <div class="grid-one">
-                    <div class="grid-into"><img src="images/Path 78.svg"></div>
-                    <h3>Easy to Customize</h3>
-                    <p>
-                        Proin gravida  dolor sit amet lacus
-                        accumsan et viverra.
-                    </p>
-                </div>
-            </div>
             </div>
         </div>
     </section>
-    <footer>
-        
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-media">
+                <img src="images/facebook-logo.svg" alt="">
+                <img src="images/instagram-logo.svg" alt="">
+                <img src="images/twitter.svg" alt="">
+                <img src="images/pinterest.svg" alt="">
+                <img src="images/Group 87.svg" alt="">
+            </div>
+            <span>© 2019 Cheshire County</span>
+        </div>
     </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
